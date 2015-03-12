@@ -161,8 +161,7 @@ php:
             - curl
             - imagick
         pear: {  }
-        pecl:
-            - pecl_http
+        pecl: {  }
     ini:
         display_errors: On
         error_reporting: '-1'
@@ -191,7 +190,7 @@ xdebug:
         xdebug.remote_handler: dbgp
         xdebug.remote_port: '9000'
 xhprof:
-    install: '1'
+    install: '0'
 wpcli:
     install: '0'
     version: v0.17.1
@@ -280,7 +279,7 @@ rabbitmq:
     settings:
         port: '5672'
 elastic_search:
-    install: '1'
+    install: '0'
     settings:
         version: 1.4.1
         java_install: true

@@ -73,6 +73,6 @@ clear-assets:
 	rm -r ${CURDIR}/src/backend/web/assets/* 2>/dev/null
 
 clear-assets-local:
-	vagrant ssh -c 'sudo rm -r /var/www/${PROJECT_NAME}/src/frontend/web/assets/* 2>/dev/null'
-	vagrant ssh -c 'sudo rm -r /var/www/${PROJECT_NAME}/src/backend/web/assets/* 2>/dev/null'
+	vagrant ssh -c 'sudo rm -rf /var/www/${PROJECT_NAME}/src/frontend/web/assets/*'
+	vagrant ssh -c 'sudo rm -rf /var/www/${PROJECT_NAME}/src/backend/web/assets/*'
 
